@@ -1,0 +1,36 @@
+p{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+}
+
+strong{
+    font-size: 2em;
+    font-weight: bolder;
+    font-style: italic;
+}
+
+h1{
+    font-family: 'Arial', sans-serif;
+    font-size: 2.5em;
+    color: #333;
+}
+h2{
+    font-family: 'Arial', sans-serif;
+    font-size: 2em;
+    color: #555;
+}
+
+#encabezado{
+    text-transform: lowercase;
+    text-decoration: line-through;
+    font-size: 1.5em;
+    color: #888;
+
+
+}
+
+.article{
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 5px;
+}

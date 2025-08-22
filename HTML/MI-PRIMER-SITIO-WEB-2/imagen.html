@@ -1,0 +1,52 @@
+<!-- ¿Como incluir una imagen en HTML? -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagenes en HTML</title>
+</head>
+
+<body>  
+
+    <article>
+
+        <figure>
+            <h1>Girasoles</h1>
+            <p>Los girasoles son plantas de la familia Asteraceae, conocidas por sus grandes flores amarillas que siguen la trayectoria del sol.</p>
+            <img src="assets/descarga (1).jpeg" alt="Girasoles" title="Girasoles">
+            <p id="pie de foto">pie de la foto 1</p>
+            <figcaption>Girasoles en un campo</figcaption>
+        </figure>
+    
+
+        <figure>
+            <h1>Arbol Morado</h1>
+            <p>El árbol morado, también conocido como Jacaranda, es famoso por sus hermosas flores moradas que florecen en primavera.</p>
+            <img src="assets/descarga.jpeg" alt ="Arbol Morado" title="Arbol Morado">
+            <p id="pie de foto">pie de la foto 2</p>
+            <figcaption>Árbol morado en flor</figcaption>
+        </figure>
+
+    <!-- escritorio
+    2000px
+
+    tablet
+    900px
+
+    movil
+    600px --->
+    
+    <picture>
+        <img src="assets/descarga.jpeg" alt="Paisaje Montañoso" title="Paisaje Montañoso">
+        <source srcset="assets/descarga(1).jpeg">
+        <source media="(min-width:1200px)" srcset="assets/descarga.jpeg">
+        <source media="(min-width:900px)" srcset="assets/descarga(1).jpeg">
+
+    </picture>
+
+
+    </article>
+</body>
+
+</html>

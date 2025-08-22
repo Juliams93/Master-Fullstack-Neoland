@@ -1,0 +1,37 @@
+
+/* Selector de atributo: todos los inputs requeridos */
+input[required] {
+border: 2px solid #007BFF;
+background-color: #f0f8ff;
+}
+
+/* Selector de atributo: input de tipo email */
+input[type="email"] {
+border-radius: 5px;
+}
+
+/* Combinación de selectores: label + input */
+label + input,
+label + textarea {
+margin-bottom: 15px;
+display: block;
+width: 100%;
+padding: 8px;
+}
+
+/* Selector de atributo: textarea con atributo maxlength */
+textarea[maxlength] {
+border: 2px dashed #28a745;
+}
+
+/* Combinación: input[type="submit"]:hover */
+input[type="submit"]:hover {
+background-color: #007BFF;
+color: #fff;
+cursor: pointer;
+}
+
+/* Selector de atributo: input con placeholder */
+input[placeholder] {
+font-style: italic;
+}

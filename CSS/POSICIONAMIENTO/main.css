@@ -1,0 +1,52 @@
+.contenedor {
+    border: 2px solid black;
+}
+
+/* Ejemplo de posición absoluta */
+.uno {
+    background-color: aliceblue;
+    position: relative; /* Contenedor relativo */
+    width: 200px;
+    height: 200px;
+}
+.uno .hijo {
+    position: absolute; /* Hijo absoluto */
+    top: 20px;
+    left: 20px;
+    width: 100px;
+    height: 100px;
+    background-color: lightblue;
+}
+.dos {
+    background-color: lightcoral;
+    position: relative; /* Contenedor relativo */
+    width: 200px;
+    height: 200px;
+}
+
+/* 
+.position-static {
+    position: static; /* Este es el valor por defecto */
+
+.position-relative {
+    position: relative; /* Permite posicionar elementos en relación a su posición original */
+    top: 20px;
+    left: 20px;
+}
+
+.position-absolute {
+    position: absolute; /* Permite posicionar elementos en relación a su contenedor más cercano con posición relativa */
+    top: 40px;
+    left: 40px;
+}
+
+.position-fixed {
+    position: fixed; /* Permite posicionar elementos en relación a la ventana del navegador */
+    top: 0;
+    right: 0;
+}
+
+.position-sticky {
+    position: sticky; /* Permite que un elemento se quede fijo en la pantalla al hacer scroll */
+    top: 10px;
+}

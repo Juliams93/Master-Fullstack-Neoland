@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio final HTML</title>
+</head>
+<body>
+<header></header>
+    <h1>Ejercicio Final HTML</h1>
+    <p>Bienvenido a la página de práctica final de HTML.</p>
+</header>
+
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#sobre-mi">Sobre mí</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+<main>
+    <section id="inicio">
+        <h2>Inicio</h2>
+        <p>Esta es la sección de inicio donde puedes encontrar información general.</p>
+    </section>
+    <section id="sobre-mi">
+        <h2>Sobre mí</h2>
+        <p>Hola, soy Julia. Me apasiona el desarrollo web y estoy aprendiendo HTML.</p>
+    </section>
+    <section id="proyectos">
+        <h2>Proyectos</h2>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Descripción</th>  
+                    <th>Año</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Portfolio Web</td>
+                    <td>Mi sitio personal con mis trabajos.</td>
+                    <td>2024</td>
+                </tr>
+                <tr>
+                    <td>Blog de Viajes</td>
+                    <td>Un blog sobre mis experiencias viajando.</td>
+                    <td>2023</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>Puedes contactarme en <a href="mailto:julia@email.com">julia@email.com</a>.</p>
+        <form action="#" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <br>
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <label for="mensaje">Mensaje:</label>
+            <br>
+            <textarea id="mensaje" name="mensaje" rows="4" cols="40" required></textarea>
+            <br>
+            <label for="colaboracion">¿Te gustaría colaborar en el futuro?</label>
+            <select id="colaboracion" name="colaboracion" required>
+                <option value="">Selecciona una opción</option>
+                <option value="si">Sí</option>
+                <option value="no">No</option>
+                <option value="quizas">Quizás</option>
+            </select>
+            <br>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Julia. Todos los derechos reservados.</p>
+    </footer>
+    
+</body>
+</html>
+
+diferencia th y td en una tabla:
+<th> (table header) se utiliza para definir una celda de encabezado en una tabla, que generalmente contiene títulos o descripciones de las columnas. Por defecto, el texto en un <th> se muestra en negrita y centrado.
+<td> (table data) se utiliza para definir una celda de datos en una tabla, que contiene la información real. El texto en un <td> se muestra normalmente en un estilo de texto regular y alineado a la izquierda por defecto.

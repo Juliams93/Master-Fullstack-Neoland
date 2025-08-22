@@ -1,0 +1,67 @@
+/* Selector de elemento */
+h1 {
+    color: blue;
+    font-size: 2em;
+}
+
+/* Selector de elemento */
+h2 {
+    color: green;
+    font-size: 1.5em;
+}
+
+/* Selector de clase */
+.titulo-destacado {
+    color: orange;
+    font-weight: bold;
+}
+
+/* Selector de ID */
+#principal {
+    text-align: center;
+}
+
+/* Selector de atributo */
+input[type="text"] {
+    border: 2px solid #333;
+}
+
+/* Pseudo-clase */
+a:hover {
+    color: red;
+}
+
+/* Pseudo-elemento */
+p::first-line {
+    font-weight: bold;
+}
+
+/* Hijo directo */
+div > p {
+    background: #f0f0f0;
+}
+
+/* Descendiente */
+section p {
+    font-style: italic;
+}
+
+/* Adyacente */
+h1 + p {
+    margin-top: 0;
+}
+
+/* General */
+h2 ~ p {
+    color: purple;
+}
+
+/* nth-child */
+li:nth-child(2) {
+    background: yellow;
+}
+
+/* nth-of-type */
+li:nth-of-type(2) {
+    font-size: 1.2em;
+}

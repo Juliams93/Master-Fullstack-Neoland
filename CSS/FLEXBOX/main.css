@@ -1,0 +1,32 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Contenedor flex principal */
+.flex-container {
+    border: 2px solid black;
+    width: 80%; /* Ancho del contenedor */
+    margin: 50px auto; /* Centrar el contenedor */
+    padding: 50px; /* Espaciado interno del contenedor */
+    display: flex; /* Activar flexbox */
+    flex-direction: row; /* Cambia a 'column' para disposición vertical */
+    justify-content: center; /* Alinear elementos horizontalmente */
+    align-items: center; /* Alinear elementos verticalmente */
+    height: 100vh; /* Alto de la ventana gráfica */
+}
+
+/* Estilos para los elementos hijos del contenedor flex */
+.flex-container > div {
+   font-size: 2rem;
+   width: 20px; /* Ancho fijo para cada elemento */
+   border: 1px solid black; /* Borde para cada elemento */
+   padding: 50px; /* Espaciado interno de cada elemento */
+   margin: 5px; /* Espaciado entre elementos */
+   background-color: lightblue; /* Color de fondo de los elementos */
+   text-align: center; /* Centrar texto dentro de los elementos */
+   display: flex; /* Centrar contenido con flexbox */
+   align-items: center; /* Centrar verticalmente el contenido */
+   justify-content: center; /* Centrar horizontalmente el contenido */
+}

@@ -1,0 +1,37 @@
+
+/* Este es un comentario en CSS */
+/* Estilos generales */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos del cuerpo */
+
+.padre {
+    border: 1px solid rgb(204, 204, 204);
+    width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+
+}
+
+.caja1 {
+    background-color: rgb(240, 240, 240);
+    padding: 20px;
+    border-radius: 5px;
+    width: 80%;
+    margin: 0 auto;
+    height: auto;
+}
+
+/*Sistemas de medida*/
+em {
+    font-style: italic;
+    color: rgb(0, 102, 204);
+}
+

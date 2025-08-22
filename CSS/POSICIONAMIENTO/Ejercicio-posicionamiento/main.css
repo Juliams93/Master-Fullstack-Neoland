@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f0f0f0; /* gris claro */
+    color: #343a40; /* gris oscuro */
+    line-height: 1.6;
+}
+
+header {
+    position: static;
+    background-color: #ffb347; /* naranja claro */
+    padding: 1rem;
+    text-align: center;
+    color: #343a40;
+}
+
+/* NAV fijo al hacer scroll */
+nav {
+    position: sticky;
+    top: 0;
+    background-color: #6ec6ff; /* azul claro */
+    padding: 1rem;
+    text-align: center;
+    z-index: 10;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    color: #343a40;
+}
+
+/* Section principal, ajustable y fuera del flujo normal */
+section {
+    position: relative;
+    margin-right: 320px;
+    padding: 2rem;
+    background: #fffbe7; /* amarillo muy claro */
+    min-height: 70vh;
+    color: #343a40;
+}
+
+/* Aside alineado a la derecha y visible */
+aside {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    background: #b39ddb; /* violeta claro */
+    padding: 2rem 1rem;
+    box-sizing: border-box;
+    min-height: 70vh;
+    color: #343a40;
+}
+
+/* Footer fijo abajo y ancho completo */
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: #43a047; /* verde oscuro */
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    z-index: 20;
+}
+

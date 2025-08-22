@@ -1,0 +1,92 @@
+h1 {
+    color: rgb(0, 0, 255) !important; /* Blue */
+    font-size: 2em;
+}
+h2 {
+    color: green;
+    font-size: 1.5em;
+}
+h3 {
+    color: red;
+    font-size: 1.2em;
+}
+
+primer-titulo {
+    color: rgb(255, 115, 0);
+    font-size: 2em;
+}
+
+segundo-titulo {
+    color: rgb(0, 255, 0);
+    font-size: 1.5em;
+}
+
+tercer-titulo {
+    color: rgb(255, 0, 0);
+    font-size: 1.2em;
+}
+
+
+.orange {
+    color: rgb(255, 115, 0);
+}
+
+div>h4 {
+    color: aqua;
+    font-size: 1.1em;
+}
+
+h4+p {
+    font-style: italic;
+    font-size: 1em;
+}
+
+li:nth-child(1) {
+    color: blue;
+}
+
+a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+h2::before{
+    content: "Esta es la nota -";
+    color: rgb(127, 127, 246);
+}
+
+h2::first-line{
+    content: " - Esta es la nota";
+    font-variant: small-caps;
+    color: rgb(127, 127, 246);
+}
+/* 
+    Selectores de CSS
+    - Elemento: h1, h2, h3, p, div, span, etc.
+    - Clase: .nombre-clase
+    - ID: #nombre-id
+    - Atributo: [atributo], [atributo="valor"]
+    - Pseudo-clases: :hover, :focus, :active, :first-child, :last-child, etc.
+    - Pseudo-elementos: ::before, ::after, ::first-letter, ::first-line
+*/
+
+/* > = Solo afecta a los hijos directos del elemento padre */
+
+/* Selectores combinados
+    - Descendiente: div p (todos los p dentro de un div)
+    - Hijo directo: div>p (solo los p que son hijos directos de un div)
+    - Adyacente: h1+p (el primer p que sigue a un h1)
+    - General: h1~p (todos los p que siguen a un h1)
+    - nth-child: li:nth-child(2) (el segundo hijo de un padre, puede ser de cualquier tipo)
+    - nth-of-type: li:nth-of-type(2) (el segundo li de un padre, solo cuenta los li)
+    - hover: a:hover (cuando el mouse está sobre un enlace)
+*/
+
+.content {
+    background-color: rgb(240, 240, 240);
+    padding: 20px;
+    border-radius: 5px;
+    width: 80%;
+    margin: 0 auto; 
+    height: auto;
+}

@@ -1,0 +1,137 @@
+# Práctica de formularios:
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio de Formularios</title>
+
+<!-- 
+Vamos a crear dos formularios:
+
+El primero será para registrarnos en un club.
+El segundo para registrar el robo de una bicicleta.
+-->
+
+<body>
+    <h1>Formulario de Registro en el Club</h1>
+    <form action="registro_club.php" method="post" id="registroClub">
+        <fieldset>
+            <legend>Datos Personales</legend>
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" id="nombre" required>
+
+            <label for="apellido">Apellido:</label>
+            <input type="text" name="apellido" id="apellido" required>
+
+            <label for="edad">Edad:</label>
+            <input type="number" name="edad" id="edad" min="0" max="120" required>
+
+            <span>Sexo:</span>
+            <input type="radio" name="sexo" id="sexo_m" value="masculino" required>
+            <label for="sexo_m">Masculino</label>
+            <input type="radio" name="sexo" id="sexo_f" value="femenino">
+            <label for="sexo_f">Femenino</label>
+            <input type="radio" name="sexo" id="sexo_o" value="otro">
+            <label for="sexo_o">Otro</label>
+
+             <label>
+            <input type="checkbox" name="me_siento_del_club" id="me_siento_del_club">
+            Me siento del club
+        </label>
+
+        <label for="sobre_ti">Escribe algo sobre ti:</label>
+        <textarea name="sobre_ti" id="sobre_ti" rows="4" placeholder="Escribe algo sobre ti..."></textarea>
+    </form>
+        </fieldset>
+
+        <fieldset>
+            <legend>Datos de Contacto</legend>
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" name="email" id="email" required>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" name="telefono" id="telefono" pattern="[0-9]{9,15}" required>
+        </fieldset>
+
+       
+
+    <h1>Formulario de Registro de Robo de Bicicleta</h1>
+    <form action="registro_robo.php" method="post" id="registroRobo">
+        <label for="fecha_robo">Fecha del Robo:</label>
+        <input type="date" name="fecha_robo" id="fecha_robo" required>
+
+        <label for="hora_robo">Hora del Robo:</label>
+        <input type="time" name="hora_robo" id="hora_robo" required>
+
+        <label for="color">Color de la Bicicleta:</label>
+        <input type="color" name="color" id="color">
+
+        <label for="precio">Rango de Precio:</label>
+        <input type="range" name="precio" id="precio" min="100" max="10000" step="100" oninput="precioOutput.value = precio.value">
+        <output name="precioOutput" id="precioOutput">100</output> €
+
+        <label for="tipo">Tipo de Bicicleta:</label>
+        <select name="tipo" id="tipo" required>
+            <option value="">Selecciona un tipo</option>
+            <optgroup label="Urbana">
+            <option value="urbana_clasica">Bicicleta Clásica</option>
+            <option value="urbana_plegable">Bicicleta Plegable</option>
+            <option value="urbana_electrica">Bicicleta Eléctrica</option>
+            <option value="urbana_commuter">Bicicleta Commuter</option>
+            </optgroup>
+            <optgroup label="Montaña">
+            <option value="montana_sport">Bicicleta Sport</option>
+            <option value="montana_trail">Bicicleta Trail</option>
+            <option value="montana_hardtrail">Bicicleta Hard Trail</option>
+            <option value="montana_xc">Bicicleta XC / Cross Country</option>
+            </optgroup>
+            <optgroup label="Carreras">
+            <option value="carreras_granfondo">Bicicleta Gran Fondo</option>
+            <option value="carreras_racing">Bicicleta Racing</option>
+            <option value="carreras_aero">Bicicleta Aero</option>
+            </optgroup>
+        </select>
+
+        <label for="accesorios">Accesorios (selección múltiple):</label>
+        <select name="accesorios[]" id="accesorios" multiple>
+            <option value="ruedines">Ruedines</option>
+            <option value="hinchadores">Hinchadores</option>
+            <option value="rodillos">Rodillos</option>
+            <option value="bomba_aire">Bomba de aire</option>
+            <option value="alforja">Alforja</option>
+            <option value="silla_portabebes">Silla portabebés</option>
+        </select>
+
+        <label for="marca">¿Qué marca era?</label>
+        <input list="marcas" name="marca" id="marca" required>
+        <datalist id="marcas">
+            <option value="Specialized">
+            <option value="Trek">
+            <option value="Merida">
+            <option value="Scott">
+            <option value="Giant">
+            <option value="Cube">
+            <option value="Lapierre">
+            <option value="Orbea">
+            <option value="Cannondale">
+            <option value="BMC">
+            <option value="Canyon">
+            <option value="Look">
+            <option value="Protek">
+            <option value="Megamo">
+            <option value="Pinarello">
+            <option value="Bianchi">
+            <option value="BH">
+            <option value="Factor">
+            <option value="Ghost">
+            <option value="Cervélo">
+            <option value="Argon"></option>
+        </datalist>
+
+        <label for="modelo">Modelo:</label>
+        <input type="text" name="modelo" id="modelo">
+
+        <input type="submit" value="Registrar Robo">
+    </form>
+</body>

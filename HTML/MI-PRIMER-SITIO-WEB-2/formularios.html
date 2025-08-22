@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+
+<body>
+    <form action="enviar.php" method="post" autocomplete="off" id="formulario" name="formulario">
+        <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre" required>
+        <input type="text" name="apellido" id="apellido" placeholder="Escribe tu apellido" required>
+        <select name="pais" id="pais" required>
+            <option value="" disabled selected>Selecciona tu país</option>
+            <option value="argentina">Argentina</option>
+            <option value="chile">Chile</option>
+            <option value="colombia">Colombia</option>
+            <option value="mexico">México</option>
+            <option value="peru">Perú</option>
+        <input type="number" name="edad" id="edad" placeholder="Edad" min="0" max="120" required>
+        <input type="tel" name="telefono" id="telefono" placeholder="Teléfono" pattern="[0-9]{10}" required>
+        <input type="email" name="email" id="email" placeholder="Correo electrónico" required>
+        <input type="file" name="archivo" id="archivo" accept=".jpg, .png, .pdf">
+        <input type="date" name="fecha_nacimiento" id="fecha_nacimiento" required>
+        <input type="password" name="contrasena" id="contrasena" placeholder="Contraseña" required>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpiar">
+        <input type="hidden" name="token" value="1234567890">
+        <label for="terminos">
+            <input type="checkbox" name="terminos" id="terminos" required>
+            Acepto los términos y condiciones
+        </label>
+
+            <fieldset>
+                <legend>Información adicional</legend>
+                <label for="notificaciones">
+                    <input type="checkbox" name="notificaciones" id="notificaciones">
+                    Deseo recibir notificaciones
+                </label>
+                <label for="newsletter">
+                    <input type="checkbox" name="newsletter" id="newsletter">
+                    Deseo suscribirme al boletín informativo
+                </label>
+            </fieldset>
+    <!-- El comando "fieldset" agrupa elementos relacionados en un formulario -->
+<fieldset>
+    <legend>Preferencias de contacto</legend>
+    <label>
+        <input type="radio" name="contacto" value="telefono" checked>
+        Teléfono
+    </label>
+    <label>
+        <input type="radio" name="contacto" value="email">
+        Correo electrónico
+    </label>
+</fieldset>
+<label for="comentarios">Comentarios:</label>
+<textarea name="comentarios" id="comentarios" rows="2" placeholder="Comentarios..."></textarea>
+<label for="color_favorito">Color favorito:</label>
+<input type="color" name="color_favorito" id="color_favorito">
+<label for="hora_preferencia">Hora preferida:</label>
+<input type="time" name="hora_preferencia" id="hora_preferencia">
+
+            
+required
+            <!-- El comando "required" indica que el campo es obligatorio -->
+            <input type="text" name="campo_obligatorio" id="campo_obligatorio" placeholder="Campo obligatorio" required>
+maxlength="50" 
+            <!-- El comando "maxlength" limita la cantidad de caracteres que se pueden ingresar -->
+            <input type="text" name="campo_maximo" id="campo_maximo" placeholder="Máximo 50 caracteres" maxlength="50">
+minlength="5" 
+            <!-- El comando "minlength" establece la cantidad mínima de caracteres que se deben ingresar -->
+            <input type="text" name="campo_minimo" id="campo_minimo" placeholder="Mínimo 5 caracteres" minlength="5">
+
+readonly
+            <!-- El comando "readonly" hace que el campo no sea editable -->
+            <input type="text" name="campo_lectura" id="campo_lectura" placeholder="Campo de solo lectura" readonly>
+disabled    
+            <!-- El comando "disabled" desactiva el campo, no se enviará en el formulario -->
+            <input type="text" name="campo_desactivado" id="campo_desactivado" placeholder="Campo desactivado" disabled>
+
+radio
+            <!-- El comando "radio" permite seleccionar una opción entre varias -->
+            <label>
+                <input type="radio" name="opcion" value="opcion1" checked>
+                Opción 1
+            </label>
+            <label>
+                <input type="radio" name="opcion" value="opcion2">
+                Opción 2
+            </label>
+       
+    </form>
+</body>
+</html>
