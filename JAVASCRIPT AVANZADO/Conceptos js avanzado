@@ -1,0 +1,94 @@
+# Explicación sencilla de conceptos avanzados de JavaScript y herramientas
+
+## Herramientas y Dev Tools
+
+### Dev Tools de Google Chrome
+
+Herramientas integradas en Chrome para ver y modificar el código de las páginas web en tiempo real. Úsalas para depurar errores y analizar el comportamiento de tu código.
+
+- **Panel de código fuente:** Permite ver y editar archivos de tu proyecto directamente en el navegador.
+
+### Herramientas de Linteo y Automatización
+
+- **Linters:** Revisan tu código y avisan sobre errores o mejoras posibles.
+- **Automatización:** Permite ejecutar tareas repetitivas (como revisar errores) automáticamente.
+
+### Plugins de VS Code
+
+Pequeñas aplicaciones que agregan funciones extra a Visual Studio Code. Instálalos siguiendo las instrucciones del archivo `README.md` de tu proyecto.
+
+## Librerías y Plugins
+
+- **NodeJS:** Permite usar JavaScript fuera del navegador, por ejemplo, para crear servidores o herramientas.
+- **ESLint, StyleLint, Commitlint:** Linters para revisar errores en JavaScript, CSS y mensajes de commit. Se instalan con comandos específicos.
+
+## Submódulos de Git
+
+- **Submódulo:** Permite agregar otro proyecto dentro del principal, útil para reutilizar código de otros repositorios.
+
+**Comandos básicos:**
+
+```bash
+# Agregar un submódulo
+git submodule add <url>
+
+# Eliminar un submódulo
+git submodule deinit <path>
+
+# Clonar un proyecto con submódulos
+git clone --recurse-submodules <url>
+
+# Actualizar submódulos
+git submodule update --init --recursive
+```
+
+## Patrones de arquitectura y diseño en JavaScript
+
+- **MVC:** Modelo-Vista-Controlador
+- **MVP:** Modelo-Vista-Presentador
+- **MVVM:** Modelo-Vista-VistaModelo
+
+Otros estilos:
+
+- **Hexagonal**
+- **Microservicios**
+- **Monolítico**
+
+## Importación y exportación de módulos
+
+- **Importar archivos:** Puedes traer código de otros archivos usando `import`.
+
+```js
+import data from 'https://example.com/data.json' with { type: 'json' };
+```
+
+- **Importación dinámica:** Carga módulos solo cuando los necesites, ahorrando recursos.
+
+## Conceptos avanzados de JavaScript
+
+- **Scope:** Alcance de las variables, define dónde puedes usarlas.
+- **Closures:** Funciones que recuerdan las variables del contexto donde fueron creadas.
+- **Namespaces:** Organización del código para evitar conflictos de nombres.
+
+## Control de timeouts en peticiones XHR con AbortSignal
+
+- **AbortSignal:** Permite cancelar una petición si tarda demasiado, evitando bloqueos en la aplicación.
+
+## Tipado de variables
+
+- **typeof:** Permite saber el tipo de una variable (número, texto, etc).
+- **TypeScript:** Versión mejorada de JavaScript que permite definir tipos de variables para evitar errores.
+
+## Testing (Pruebas)
+
+- **TDD:** Escribir primero las pruebas y luego el código que las hace pasar.
+- **Herramientas:** Jest, Mocha, Chai, Cypress, Playwright, Vitest.
+
+## Aplicaciones Progresivas (PWA)
+
+- **PWA:** Aplicaciones web que se comportan como aplicaciones nativas en tu teléfono.
+
+## Git Hooks y Linters
+
+- **Git Hooks:** Acciones automáticas que se ejecutan antes o después de cambios en el código con Git.
+- **Linters:** Herramientas que revisan tu código y ayudan a mantenerlo limpio y sin errores.

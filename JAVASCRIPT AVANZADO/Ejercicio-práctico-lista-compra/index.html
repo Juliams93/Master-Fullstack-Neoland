@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica máster de fullstack</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    
+</head>
+<body>
+    <main>
+        <h1>Lista de compra</h1>
+        <form id="formulario">
+            <input type="text" id="item" placeholder="Añadir artículo" required>
+            <button type="submit" id="nuevoArticulo">Añadir</button>
+            <button type="button" id="nuevaLista">Nueva lista de la compra</button>
+            <button type="button" id="eliminarTodo">Eliminar todos</button>
+        </form>
+        <div id="resultado">
+            <p id="feedback">La lista está vacía.</p>
+            <p>Total artículos: <span id="contador">0</span></p>
+        </div>
+        <ul id="lista"></ul>
+    </main>
+    <script src="./js/main.js"></script>
+</body>
+</html>
