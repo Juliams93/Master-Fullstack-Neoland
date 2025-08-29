@@ -1,0 +1,31 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Sistema de Notificaciones SOLID</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <h1>Sistema de Notificaciones</h1>
+    <p>Esta página permite enviar notificaciones a través de diferentes canales (Email, SMS y Push) utilizando un formulario. Es un ejemplo práctico para aplicar los principios SOLID en JavaScript.</p>
+    <!-- Formulario para enviar notificaciones -->
+    <form id="notificationForm">
+        <label for="message">Mensaje:</label>
+        <input type="text" id="message" required>
+        <fieldset>
+            <legend>Canales</legend>
+            <!-- Selección de canales -->
+            <label><input type="checkbox" value="email" checked> Email</label>
+            <label><input type="checkbox" value="sms" checked> SMS</label>
+            <label><input type="checkbox" value="push" checked> Push</label>
+        </fieldset>
+        <button type="submit">Enviar</button>
+    </form>
+    <!-- Salida de resultados -->
+    <div id="output"></div>
+    <script src="js/main.js"></script>
+</body>
+</html>
+
+

@@ -1,0 +1,111 @@
+/* styles.css */
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f7f7fa;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-top: 2rem;
+    font-size: 2rem;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 2rem auto;
+    max-width: 700px;
+    flex-wrap: wrap;
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+
+form input[type="text"],
+form input[type="number"] {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    width: 140px;
+}
+
+form button {
+    padding: 0.5rem 1.2rem;
+    border: none;
+    border-radius: 4px;
+    background: #4f8cff;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+form button#nuevaLista {
+    background: #e74c3c;
+}
+
+form button:hover {
+    background: #357ae8;
+}
+
+form button#nuevaLista:hover {
+    background: #c0392b;
+}
+
+ul#lista {
+    max-width: 700px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    padding: 1.5rem;
+    list-style: none;
+}
+
+ul#lista li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.7rem 0;
+    border-bottom: 1px solid #eee;
+    font-size: 1.05rem;
+}
+
+ul#lista li:last-child {
+    border-bottom: none;
+}
+
+hr {
+    margin: 2rem 0 1rem 0;
+    border: none;
+    border-top: 1px solid #ddd;
+}
+
+h2 {
+    margin-top: 1rem;
+    color: #444;
+    font-size: 1.3rem;
+}
+
+#gastoTotal, #total {
+    font-weight: bold;
+    color: #2d7a46;
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+}
+
+#total-articulos {
+    background: #4f8cff;
+    color: #fff;
+    border-radius: 50%;
+    padding: 0.3em 0.7em;
+    font-size: 1rem;
+    margin-left: 0.5em;
+}

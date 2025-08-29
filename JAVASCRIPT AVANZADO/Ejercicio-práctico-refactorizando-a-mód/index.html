@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica Refactorizando a Módulos</title>
+    <script type="importmap">
+      {
+        "imports": {
+          "classes/Article": "./js/classes/Article.js",
+          "classes/ShoppingList": "./js/classes/ShoppingList.js",
+          "classes/localStore": "./js/classes/localStore.js",
+          "decorators/log": "./js/decorators/log.js",
+          "decorators/validate": "./js/decorators/validate.js",
+          "utils/translate": "./js/utils/translate.js"
+        }
+      }
+    </script>
+    <script type="module" src="./js/index.modules.js" defer></script>
+    <link rel="stylesheet" href="./css/styles.css"></link>
+</head>
+<body>
+    <h1>Lista de la compra <span id="total-articulos">0</span></h1>
+    <form id="formulario">
+        <input type="text" id="campoArticulo" placeholder="Artículo" required>
+        <input type="number" id="campoCantidad" placeholder="Cantidad" min="1" value="1" required>
+        <input type="number" id="campoPrecio" placeholder="Precio" min="0" step="0.01" value="0" required>
+        <button type="button" id="nuevoArticulo">Añadir artículo</button>
+        <button type="reset" id="nuevaLista">Nueva lista</button>
+    </form>
+    <ul id="lista">
+        <!-- Aquí se añadirán los artículos -->
+        <hr>
+        <h2>Resumen</h2>
+        <p id="gastoTotal">Gasto total: 0€</p>
+    <p id="total">Total artículos: 0</p>
+    </ul>
+</body>
+</html>
+
